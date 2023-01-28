@@ -1,0 +1,29 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Faridur 1",
+      "alterEgo": "Description 1"
+    },
+    {
+      "id": 2,
+      "name": "Faridur 2",
+      "alterEgo": "Description 2"
+    },
+    {
+      "id": 3,
+      "name": "Faridur 3",
+      "alterEgo": "Description 3"
+    },
+    {
+      "id": 4,
+      "name": "Faridur 4",
+      "alterEgo": "Description 4"
+    },
+    {
+      "id": 5,
+      "name": "Faridur 5",
+      "alterEgo": "Description 5"
+    }
+  ]
+}
