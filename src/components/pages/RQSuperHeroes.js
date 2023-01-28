@@ -11,7 +11,6 @@ function RQSuperHeroes() {
     'super-heroes',
     fetchSuperHeroes,
     {
-      cacheTime: 30000,
       staleTime: 30000,
     }
   );
