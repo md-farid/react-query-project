@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { ReactQueryDevtools } from 'react-query/devtools';
 import { QueryClientProvider, QueryClient } from 'react-query';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './App.css';
 import Home from './components/pages/Home';
@@ -38,6 +39,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
 }
