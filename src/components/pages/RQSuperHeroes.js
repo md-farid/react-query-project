@@ -36,6 +36,15 @@ function RQSuperHeroes() {
       enabled: false,
       onSuccess: onSuccess,
       onError: onError,
+      select: (data) => {
+        const names = data?.data.map((hero) => {
+          return {
+            key: hero.id,
+            name: hero.name,
+          };
+        });
+        return names;
+      },
     }
   );
 
@@ -53,8 +62,11 @@ function RQSuperHeroes() {
     <React.Fragment>
       <h2>RQSuperHeroes</h2>
       <button onClick={refetch}>Super Heroes</button>
-      {data?.data.map((hero) => {
+      {/* {data?.data.map((hero) => {
         return <div key={hero.id}>{hero.name}</div>;
+      })} */}
+      {data?.map((hero) => {
+        return <div key={hero.key}>{hero.name}</div>;
       })}
     </React.Fragment>
   );
